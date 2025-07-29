@@ -1,0 +1,28 @@
+.input {
+  display: flex;
+  align-items: center;
+  border: 1px solid $yellow;
+  background-color: $black;
+  padding: 2px 4px;
+  border-radius: 4px;
+
+  &__text {
+    font-size: 16px;
+    flex: 1;
+    background-color: $black;
+    padding: 6px 0 7px;
+    color: $white;
+    border: none;
+    margin-left: 8px;
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__icon {
+    fill: $white;
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+  }
+}

@@ -1,3 +1,12 @@
 @import "./base/variables";
 @import "./base/reset";
 @import "./base/typography";
+
+@import "./layout/header";
+
+@import "./components/input";
+@import "./components/card";
+@import "./components/info-item";
+
+@import "./pages/home";
+@import "./pages/detail";

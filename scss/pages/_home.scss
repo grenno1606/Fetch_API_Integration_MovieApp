@@ -1,0 +1,13 @@
+.home {
+  background-color: $background-color;
+  padding: 80px 32px 32px;
+  &__search {
+    margin-bottom: 32px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}

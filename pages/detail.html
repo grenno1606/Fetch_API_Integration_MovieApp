@@ -10,6 +10,12 @@
 
 <body>
   <header class="header">
+    <a href="" class="header__icon">
+      <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M16.62 2.99c-.49-.49-1.28-.49-1.77 0L6.54 11.3c-.39.39-.39 1.02 0 1.41l8.31 8.31c.49.49 1.28.49 1.77 0s.49-1.28 0-1.77L9.38 12l7.25-7.25c.48-.48.48-1.28-.01-1.76z"></path>
+      </svg>
+    </a>
+
     <svg class="header__logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 575 289.83" width="100" height="48" class="AppHeader_appLogo__1aQjb">
       <defs>
         <path d="M575 24.91C573.44 12.15 563.97 1.98 551.91 0C499.05 0 76.18 0 23.32 0C10.11 2.17 0 14.16 0 28.61C0 51.84 0 237.64 0 260.86C0 276.86 12.37 289.83 27.64 289.83C79.63 289.83 495.6 289.83 547.59 289.83C561.65 289.83 573.26 278.82 575 264.57C575 216.64 575 48.87 575 24.91Z" id="d1pwhf9wy2"></path>
@@ -54,80 +60,60 @@
       </g>
     </svg>
   </header>
-  <main class="home">
-    <div class="home__search input">
-      <input class="input__text" type="text" placeholder="Search for a movie">
-      <svg class="input__icon" class="MuiSvgIcon-root" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-        <path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path>
-      </svg>
-    </div>
-    <div class="home__list">
-      <div class="card">
-        <a href="/pages/detail.html" class="card__info">
-          <img class="card__poster" src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg" alt="">
-          <h2 class="card__title">Iron Man</h2>
-        </a>
-        <div class="card__group">
-          <div class="card__year">
-            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall card__icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"></path>
-            </svg>
-            <span>2008</span>
-          </div>
-          <svg class="MuiSvgIcon-root card__icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
+  <main class="detail">
+    <img class="detail__poster" src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg" alt="">
+    <div class="detail__content">
+      <div class="detail__title-group">
+        <p class="detail__title">Iron Man</p>
+        <div class="detail__rating">
+          <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge detail__icon" focusable="false" viewBox="0 0 24 24" color="#e4bb24" aria-hidden="true">
+            <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"></path>
           </svg>
+          <div>
+            <div class="detail__rating-point">7.9 <span class="detail__rating-sum">/10</span></div>
+            <p class="detail__votes">1,183,300</p>
+          </div>
         </div>
       </div>
-      <div class="card">
-        <div class="card__info">
-          <img class="card__poster" src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg" alt="">
-          <h2 class="card__title">Iron Man</h2>
-        </div>
-        <div class="card__group">
-          <div class="card__year">
-            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall card__icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"></path>
-            </svg>
-            <span>2008</span>
-          </div>
-          <svg class="MuiSvgIcon-root card__icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
-          </svg>
-        </div>
+      <div class="detail__meta">
+        <span class="detail__meta--item">2008</span>
+        <span class="detail__meta--item">PG-13</span>
+        <span class="detail__meta--item">02 May 2008</span>
+        <span class="detail__meta--item">126 min</span>
       </div>
-      <div class="card">
-        <div class="card__info">
-          <img class="card__poster" src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg" alt="">
-          <h2 class="card__title">Iron Man</h2>
+      <p class="detail__description">Tony Stark. Genius, billionaire, playboy, philanthropist. Son of legendary inventor and weapons contractor Howard Stark. When Tony Stark is assigned to give a weapons presentation to an Iraqi unit led by Lt. Col. James Rhodes, he's given a ride on enemy lines. That ride ends badly when Stark's Humvee that he's riding in is attacked by enemy combatants. He survives - barely - with a chest full of shrapnel and a car battery attached to his heart. In order to survive he comes up with a way to miniaturize the battery and figures out that the battery can power something else. Thus Iron Man is born. He uses the primitive device to escape from the cave in Iraq. Once back home, he then begins work on perfecting the Iron Man suit. But the man who was put in charge of Stark Industries has plans of his own to take over Tony's technology for other matters.</p>
+      <div class="detail__info">
+        <div class="info-item">
+          <div class="info-item__label">Genre :</div>
+          <p class="info-item__value">Action, Adventure, Sci-Fi</p>
         </div>
-        <div class="card__group">
-          <div class="card__year">
-            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall card__icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"></path>
-            </svg>
-            <span>2008</span>
-          </div>
-          <svg class="MuiSvgIcon-root card__icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
-          </svg>
+        <div class="info-item">
+          <div class="info-item__label">Director :</div>
+          <p class="info-item__value">Action, Adventure, Sci-Fi</p>
         </div>
-      </div>
-      <div class="card">
-        <div class="card__info">
-          <img class="card__poster" src="https://m.media-amazon.com/images/M/MV5BMTczNTI2ODUwOF5BMl5BanBnXkFtZTcwMTU0NTIzMw@@._V1_SX300.jpg" alt="">
-          <h2 class="card__title">Iron Man</h2>
+        <div class="info-item">
+          <div class="info-item__label">Writer :</div>
+          <p class="info-item__value">Action, Adventure, Sci-Fi</p>
         </div>
-        <div class="card__group">
-          <div class="card__year">
-            <svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeSmall card__icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-              <path d="M20 3h-1V1h-2v2H7V1H5v2H4c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 18H4V8h16v13z"></path>
-            </svg>
-            <span>2008</span>
-          </div>
-          <svg class="MuiSvgIcon-root card__icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"></path>
-          </svg>
+        <div class="info-item">
+          <div class="info-item__label">Actors :</div>
+          <p class="info-item__value">Action, Adventure, Sci-Fi</p>
+        </div>
+        <div class="info-item">
+          <div class="info-item__label">Language :</div>
+          <p class="info-item__value">Action, Adventure, Sci-Fi</p>
+        </div>
+        <div class="info-item">
+          <div class="info-item__label">Country :</div>
+          <p class="info-item__value">Action, Adventure, Sci-Fi</p>
+        </div>
+        <div class="info-item">
+          <div class="info-item__label">Awards :</div>
+          <p class="info-item__value">Action, Adventure, Sci-Fi</p>
+        </div>
+        <div class="info-item">
+          <div class="info-item__label">Production :</div>
+          <p class="info-item__value">Action, Adventure, Sci-Fi</p>
         </div>
       </div>
     </div>

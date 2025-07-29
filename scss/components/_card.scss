@@ -1,0 +1,45 @@
+.card {
+  border-radius: 4px;
+  overflow: hidden;
+
+  &__info {
+    position: relative;
+  }
+
+  &__poster {
+    object-fit: cover;
+    height: 400px;
+  }
+
+  &__title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: $white;
+    padding: 16px;
+    background: linear-gradient(0deg, #000, transparent);
+  }
+
+  &__group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+    background-color: $black;
+    height: 64px;
+  }
+
+  &__year {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: $white;
+    font-style: italic;
+  }
+
+  &__icon {
+    width: 24px;
+    fill: $white;
+  }
+}
