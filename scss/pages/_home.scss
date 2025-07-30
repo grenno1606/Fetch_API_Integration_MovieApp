@@ -13,6 +13,10 @@
   }
 }
 
+.loading__list {
+  padding: 20px 0;
+}
+
 @media (min-width: $breakpoint-md) {
   .home {
     &-wrapper {

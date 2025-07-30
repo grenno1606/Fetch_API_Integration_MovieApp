@@ -61,7 +61,7 @@
       justify-content: center;
       cursor: pointer;
       &:hover {
-        background-color: rgba(255, 255, 255, 0.08);
+        background-color: $background-gray-dark;
       }
     }
   }
@@ -69,30 +69,32 @@
 
 .card.loading {
   background-color: $black;
-  .card__poster {
-    background-color: rgba(255, 255, 255, 0.13);
-  }
+  .card {
+    &__poster {
+      background-color: $background-gray;
+    }
 
-  .card__title > * {
-    width: 80%;
-    height: 40px;
-    transform: scale(1, 0.6);
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.13);
-  }
-  .card__year {
-    width: 100px;
-    height: 40px;
-    transform: scale(1, 0.6);
-    border-radius: 4px;
-    background-color: rgba(255, 255, 255, 0.13);
-  }
+    &__title > * {
+      width: 80%;
+      height: 40px;
+      transform: scale(1, 0.6);
+      border-radius: 4px;
+      background-color: $background-gray;
+    }
+    &__year {
+      width: 100px;
+      height: 40px;
+      transform: scale(1, 0.6);
+      border-radius: 4px;
+      background-color: $background-gray;
+    }
 
-  .card__icon {
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    background-color: rgba(255, 255, 255, 0.13);
+    &__icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 100%;
+      background-color: $background-gray;
+    }
   }
 }
 
@@ -110,7 +112,7 @@
     background: linear-gradient(
       90deg,
       transparent,
-      rgba(255, 255, 255, 0.08),
+      $background-gray-dark,
       transparent
     );
   }

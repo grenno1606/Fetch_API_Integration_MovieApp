@@ -6,6 +6,7 @@
   &__poster {
     height: 600px;
   }
+
   &__content {
     background-color: $background-color;
     color: $white;
@@ -85,39 +86,46 @@
 
 .load {
   margin-top: 0;
-  .detail__poster {
-    background-color: rgba(255, 255, 255, 0.13);
-    height: 500px;
-    margin-bottom: 10px;
-  }
-  .detail__title {
-    background-color: rgba(255, 255, 255, 0.13);
-    width: 70%;
-    height: 80px;
-    transform: scale(1, 0.6);
-  }
+  .detail {
+    &__poster {
+      background-color: $background-gray;
+      height: 500px;
+      margin-bottom: 10px;
+      animation: fadeIn 1.5s ease-in-out 0.5s infinite;
+    }
+    &__title {
+      background-color: $background-gray;
+      width: 70%;
+      height: 80px;
+      transform: scale(1, 0.6);
+      animation: fadeIn 1.5s ease-in-out 0.5s infinite;
+    }
 
-  .detail__rating {
-    background-color: rgba(255, 255, 255, 0.13);
-    width: 20%;
-    height: 80px;
-    transform: scale(1, 0.6);
-  }
+    &__rating {
+      background-color: $background-gray;
+      width: 20%;
+      height: 80px;
+      transform: scale(1, 0.6);
+      animation: fadeIn 1.5s ease-in-out 0.5s infinite;
+    }
 
-  .detail__description {
-    background-color: rgba(255, 255, 255, 0.13);
-    width: 100%;
-    height: 40px;
-    transform: scale(1, 0.6);
+    &__description {
+      background-color: $background-gray;
+      width: 100%;
+      height: 40px;
+      transform: scale(1, 0.6);
+      animation: fadeIn 1.5s ease-in-out 0.5s infinite;
+    }
   }
 
   .info-item {
     gap: 10px;
     &__label,
     &__value {
-      background-color: rgba(255, 255, 255, 0.13);
+      background-color: $background-gray;
       height: 40px;
       transform: scale(1, 0.6);
+      animation: fadeIn 1.5s ease-in-out 0.5s infinite;
     }
   }
 }
@@ -142,5 +150,24 @@
         font-size: 16px;
       }
     }
+  }
+
+  .load {
+    max-width: 83.333333%;
+    margin: 0 auto;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+
+  100% {
+    opacity: 1;
   }
 }

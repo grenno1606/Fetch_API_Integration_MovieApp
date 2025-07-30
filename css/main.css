@@ -33,7 +33,7 @@ body {
 
 .header {
   position: fixed;
-  z-index: 2;
+  z-index: 100;
   top: 0;
   left: 0;
   right: 0;
@@ -390,12 +390,7 @@ body {
   content: "";
   position: absolute;
   animation: wave 1.6s linear 0.5s infinite;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.08),
-    transparent
-  );
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
 }
 
 @media (min-width: 768px) {
@@ -448,6 +443,10 @@ body {
 .home__message {
   color: #fff;
   text-align: center;
+}
+
+.loading__list {
+  padding: 20px 0;
 }
 
 @media (min-width: 768px) {
@@ -542,33 +541,37 @@ body {
   background-color: rgba(255, 255, 255, 0.13);
   height: 500px;
   margin-bottom: 10px;
+  animation: fadeIn 1.5s ease-in-out 0.5s infinite;
 }
 .load .detail__title {
   background-color: rgba(255, 255, 255, 0.13);
   width: 70%;
   height: 80px;
   transform: scale(1, 0.6);
+  animation: fadeIn 1.5s ease-in-out 0.5s infinite;
 }
 .load .detail__rating {
   background-color: rgba(255, 255, 255, 0.13);
   width: 20%;
   height: 80px;
   transform: scale(1, 0.6);
+  animation: fadeIn 1.5s ease-in-out 0.5s infinite;
 }
 .load .detail__description {
   background-color: rgba(255, 255, 255, 0.13);
   width: 100%;
   height: 40px;
   transform: scale(1, 0.6);
+  animation: fadeIn 1.5s ease-in-out 0.5s infinite;
 }
 .load .info-item {
   gap: 10px;
 }
-.load .info-item__label,
-.load .info-item__value {
+.load .info-item__label, .load .info-item__value {
   background-color: rgba(255, 255, 255, 0.13);
   height: 40px;
   transform: scale(1, 0.6);
+  animation: fadeIn 1.5s ease-in-out 0.5s infinite;
 }
 
 @media (min-width: 768px) {
@@ -584,6 +587,21 @@ body {
   }
   .detail__meta--item {
     font-size: 16px;
+  }
+  .load {
+    max-width: 83.333333%;
+    margin: 0 auto;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
