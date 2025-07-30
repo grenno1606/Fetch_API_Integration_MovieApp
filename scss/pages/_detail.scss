@@ -91,14 +91,14 @@
       background-color: $background-gray;
       height: 500px;
       margin-bottom: 10px;
-      animation: fadeIn 1.5s ease-in-out 0.5s infinite;
+      animation: pulse 1.5s ease-in-out 0.5s infinite;
     }
     &__title {
       background-color: $background-gray;
       width: 70%;
       height: 80px;
       transform: scale(1, 0.6);
-      animation: fadeIn 1.5s ease-in-out 0.5s infinite;
+      animation: pulse 1.5s ease-in-out 0.5s infinite;
     }
 
     &__rating {
@@ -106,7 +106,7 @@
       width: 20%;
       height: 80px;
       transform: scale(1, 0.6);
-      animation: fadeIn 1.5s ease-in-out 0.5s infinite;
+      animation: pulse 1.5s ease-in-out 0.5s infinite;
     }
 
     &__description {
@@ -114,7 +114,7 @@
       width: 100%;
       height: 40px;
       transform: scale(1, 0.6);
-      animation: fadeIn 1.5s ease-in-out 0.5s infinite;
+      animation: pulse 1.5s ease-in-out 0.5s infinite;
     }
   }
 
@@ -125,7 +125,7 @@
       background-color: $background-gray;
       height: 40px;
       transform: scale(1, 0.6);
-      animation: fadeIn 1.5s ease-in-out 0.5s infinite;
+      animation: pulse 1.5s ease-in-out 0.5s infinite;
     }
   }
 }
@@ -158,7 +158,7 @@
   }
 }
 
-@keyframes fadeIn {
+@keyframes pulse {
   0% {
     opacity: 1;
   }

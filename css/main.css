@@ -541,28 +541,28 @@ body {
   background-color: rgba(255, 255, 255, 0.13);
   height: 500px;
   margin-bottom: 10px;
-  animation: fadeIn 1.5s ease-in-out 0.5s infinite;
+  animation: pulse 1.5s ease-in-out 0.5s infinite;
 }
 .load .detail__title {
   background-color: rgba(255, 255, 255, 0.13);
   width: 70%;
   height: 80px;
   transform: scale(1, 0.6);
-  animation: fadeIn 1.5s ease-in-out 0.5s infinite;
+  animation: pulse 1.5s ease-in-out 0.5s infinite;
 }
 .load .detail__rating {
   background-color: rgba(255, 255, 255, 0.13);
   width: 20%;
   height: 80px;
   transform: scale(1, 0.6);
-  animation: fadeIn 1.5s ease-in-out 0.5s infinite;
+  animation: pulse 1.5s ease-in-out 0.5s infinite;
 }
 .load .detail__description {
   background-color: rgba(255, 255, 255, 0.13);
   width: 100%;
   height: 40px;
   transform: scale(1, 0.6);
-  animation: fadeIn 1.5s ease-in-out 0.5s infinite;
+  animation: pulse 1.5s ease-in-out 0.5s infinite;
 }
 .load .info-item {
   gap: 10px;
@@ -571,7 +571,7 @@ body {
   background-color: rgba(255, 255, 255, 0.13);
   height: 40px;
   transform: scale(1, 0.6);
-  animation: fadeIn 1.5s ease-in-out 0.5s infinite;
+  animation: pulse 1.5s ease-in-out 0.5s infinite;
 }
 
 @media (min-width: 768px) {
@@ -593,7 +593,7 @@ body {
     margin: 0 auto;
   }
 }
-@keyframes fadeIn {
+@keyframes pulse {
   0% {
     opacity: 1;
   }
