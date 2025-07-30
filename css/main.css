@@ -18,6 +18,10 @@ li {
   list-style: none;
 }
 
+.display-none {
+  display: none !important;
+}
+
 body {
   background-color: #424242;
 }
@@ -347,9 +351,59 @@ body {
   background-color: rgba(255, 255, 255, 0.08);
 }
 
+.card.loading {
+  background-color: #000;
+}
+.card.loading .card__poster {
+  background-color: rgba(255, 255, 255, 0.13);
+}
+.card.loading .card__title > * {
+  width: 80%;
+  height: 40px;
+  transform: scale(1, 0.6);
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.13);
+}
+.card.loading .card__year {
+  width: 100px;
+  height: 40px;
+  transform: scale(1, 0.6);
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 0.13);
+}
+.card.loading .card__icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.13);
+}
+
+.loading__item {
+  position: relative;
+  overflow: hidden;
+}
+.loading__item::after {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  position: absolute;
+  animation: wave 1.6s linear 0.5s infinite;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+}
+
 @media (min-width: 768px) {
   .card__year {
     font-size: 18px;
+  }
+}
+@keyframes wave {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
   }
 }
 .info-item {
@@ -385,6 +439,10 @@ body {
 }
 .home__search {
   margin-bottom: 32px;
+}
+.home__message {
+  color: #fff;
+  text-align: center;
 }
 
 @media (min-width: 768px) {
@@ -470,6 +528,41 @@ body {
   font-size: 20px;
   line-height: 24px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.load {
+  margin-top: 0;
+}
+.load .detail__poster {
+  background-color: rgba(255, 255, 255, 0.13);
+  height: 500px;
+  margin-bottom: 10px;
+}
+.load .detail__title {
+  background-color: rgba(255, 255, 255, 0.13);
+  width: 70%;
+  height: 80px;
+  transform: scale(1, 0.6);
+}
+.load .detail__rating {
+  background-color: rgba(255, 255, 255, 0.13);
+  width: 20%;
+  height: 80px;
+  transform: scale(1, 0.6);
+}
+.load .detail__description {
+  background-color: rgba(255, 255, 255, 0.13);
+  width: 100%;
+  height: 40px;
+  transform: scale(1, 0.6);
+}
+.load .info-item {
+  gap: 10px;
+}
+.load .info-item__label, .load .info-item__value {
+  background-color: rgba(255, 255, 255, 0.13);
+  height: 40px;
+  transform: scale(1, 0.6);
 }
 
 @media (min-width: 768px) {

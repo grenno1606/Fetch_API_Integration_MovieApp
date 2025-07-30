@@ -6,6 +6,11 @@
   &__search {
     margin-bottom: 32px;
   }
+
+  &__message {
+    color: $white;
+    text-align: center;
+  }
 }
 
 @media (min-width: $breakpoint-md) {
