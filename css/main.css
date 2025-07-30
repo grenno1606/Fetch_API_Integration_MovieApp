@@ -390,7 +390,12 @@ body {
   content: "";
   position: absolute;
   animation: wave 1.6s linear 0.5s infinite;
-  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.08), transparent);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.08),
+    transparent
+  );
 }
 
 @media (min-width: 768px) {
@@ -559,7 +564,8 @@ body {
 .load .info-item {
   gap: 10px;
 }
-.load .info-item__label, .load .info-item__value {
+.load .info-item__label,
+.load .info-item__value {
   background-color: rgba(255, 255, 255, 0.13);
   height: 40px;
   transform: scale(1, 0.6);
