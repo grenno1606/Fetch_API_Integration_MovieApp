@@ -14,3 +14,17 @@
     opacity: 0.7;
   }
 }
+
+@media (min-width: $breakpoint-lg) {
+  .info-item {
+    &__label {
+      width: 16%;
+      font-size: 18px;
+    }
+
+    &__value {
+      width: 84%;
+      font-size: 18px;
+    }
+  }
+}

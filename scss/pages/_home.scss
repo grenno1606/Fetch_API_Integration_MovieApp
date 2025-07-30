@@ -1,13 +1,28 @@
 .home {
   background-color: $background-color;
-  padding: 80px 32px 32px;
+  &-wrapper {
+    padding: 80px 32px 32px;
+  }
   &__search {
     margin-bottom: 32px;
   }
+}
 
-  &__list {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+@media (min-width: $breakpoint-md) {
+  .home {
+    &-wrapper {
+      max-width: 83.333333%;
+      margin: 0 auto;
+      padding-top: 96px;
+    }
+  }
+}
+
+@media (min-width: $breakpoint-lg) {
+  .home {
+    &__search {
+      max-width: 33.333333%;
+      margin: 0 auto 32px;
+    }
   }
 }

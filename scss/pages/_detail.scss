@@ -1,5 +1,8 @@
 .detail {
   margin-top: 64px;
+  row-gap: 0;
+  background-color: $background-color;
+
   &__poster {
     height: 600px;
   }
@@ -77,5 +80,28 @@
     font-size: 20px;
     line-height: 24px;
     border-bottom: 1px solid $gray-dark;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .detail {
+    max-width: 83.333333%;
+    margin: 120px auto 0;
+
+    &__rating {
+      &-sum {
+        font-size: 16px;
+      }
+    }
+
+    &__votes {
+      font-size: 16px;
+    }
+
+    &__meta {
+      &--item {
+        font-size: 16px;
+      }
+    }
   }
 }

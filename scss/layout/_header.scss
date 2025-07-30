@@ -4,11 +4,18 @@
   top: 0;
   left: 0;
   right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: $black;
-  padding: 8px 32px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 32px;
+  }
+
+  &__logo {
+    cursor: pointer;
+  }
 
   &__icon {
     position: absolute;
@@ -21,5 +28,21 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+  }
+}
+
+@media (min-width: $breakpoint-md) {
+  .header {
+    &__wrapper {
+      max-width: 83.333333%;
+      margin: 0 auto;
+      justify-content: start;
+      padding: 16px 32px;
+    }
+
+    &__icon {
+      left: 5%;
+    }
   }
 }

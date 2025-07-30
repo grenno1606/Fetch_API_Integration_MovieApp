@@ -20,9 +20,12 @@
   }
 
   &__icon {
-    fill: $white;
-    width: 24px;
-    height: 24px;
-    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    & > svg {
+      fill: $white;
+      width: 24px;
+      height: 24px;
+    }
   }
 }
